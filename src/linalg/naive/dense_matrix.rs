@@ -198,8 +198,8 @@ impl<T: RealNumber> BaseVector<T> for Vec<T> {
 /// Column-major, dense matrix. See [Simple Dense Matrix](../index.html).
 #[derive(Debug, Clone)]
 pub struct DenseMatrix<T: RealNumber> {
-    ncols: usize,
-    nrows: usize,
+    pub ncols: usize,
+    pub nrows: usize,
     values: Vec<T>,
 }
 
