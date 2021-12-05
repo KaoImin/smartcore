@@ -59,11 +59,11 @@ use crate::math::num::RealNumber;
 #[cfg_attr(feature = "serde", derive(Serialize, Deserialize))]
 #[derive(Debug)]
 pub struct PCA<T: RealNumber, M: Matrix<T>> {
-    eigenvectors: M,
-    eigenvalues: Vec<T>,
-    projection: M,
-    mu: Vec<T>,
-    pmu: Vec<T>,
+    pub eigenvectors: M,
+    pub eigenvalues: Vec<T>,
+    pub projection: M,
+    pub mu: Vec<T>,
+    pub pmu: Vec<T>,
 }
 
 impl<T: RealNumber, M: Matrix<T>> PartialEq for PCA<T, M> {
